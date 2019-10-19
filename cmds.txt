@@ -15,7 +15,6 @@ EasyCode CMD List
         |----pi
         |----power(float,int)
         |----factorial(int)
-        |----convert(str//type// , str//from// , str//to// , double//value//) #LOOK CONVERT IN DETAIL SECTION
 
     style
         |----setBack(str//color name or code//)
