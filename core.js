@@ -9,7 +9,7 @@ let write_status = "none";
 
 
 
-// Independent functions
+//#region Independent functions
 function write(str) {
     document.write(str);
     write_status = "write";
@@ -31,9 +31,10 @@ function writeln(str) {
 function msbox(str){
     window.alert(str);
 }
+//#endregion
 
 
-// Style object
+//#region Style object
 var body = document.querySelector("body");
 const style = {
     setBack:(value)=>{
@@ -76,9 +77,10 @@ const style = {
 
     },
 }
+//#endregion
 
 
-// Doc object
+//#region Doc object
 const doc = {
     add:{
         p:(text,cl="none-class",style="",display="inline-block")=>{
@@ -102,11 +104,10 @@ const doc = {
         document.querySelector(selector).style.display="inherit";
     },
 }
+//#endregion
 
 
-
-// Math object
-
+//#region Math object
 const math = {
     pi:3.14,
     PI: 3.1415926535897932384626433832795,
@@ -121,3 +122,4 @@ const math = {
         return result;
     },
 }
+//#endregion
