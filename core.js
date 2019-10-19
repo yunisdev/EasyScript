@@ -163,9 +163,12 @@ const math = {
 
 const include = {
     designer:()=>{
-        document.querySelector("head").innerHTML +="<script src=\"../designer.js\"></script>"
+        document.querySelector("head").innerHTML +="<script src=\"../libs/designer.js\"></script>"
+    },
+    advanced:()=>{
+        document.querySelector("head").innerHTML += "<script src=\"../libs/form.js\"></script>"
     },
     form:()=>{
-
+        document.querySelector("head").innerHTML += "<script src=\"../libs/advanced.js\"></script>"
     },
 }
