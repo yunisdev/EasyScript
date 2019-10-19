@@ -251,7 +251,17 @@ const math = {
                 break;
 
             case "speed":
-                break;
+                //#region SPEED
+                if (from=="km/h") {
+                    return value/3.6;
+                }
+                else if (from=="m/s") {
+                    return value*3.6;
+                }
+                else{
+                    return "from parameter is wrong";
+                }
+                //#endregion
 
             case "angle":
                 break;
