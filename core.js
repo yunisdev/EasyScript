@@ -5,6 +5,12 @@
 const newLine = "<br>";
 let write_status = "none";
 
+//Back functions
+
+
+
+
+
 
 // Independent functions
 function write(str) {
@@ -116,6 +122,9 @@ const math = {
             result *= i;
         }
         return result;
+    },
+    convert:(from,to,value)=>{
+        
     },
 
 }
