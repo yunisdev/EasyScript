@@ -5,9 +5,6 @@
 const newLine = "<br>";
 let write_status = "none";
 
-//Back functions
-
-
 
 
 
@@ -123,8 +120,165 @@ const math = {
         }
         return result;
     },
-    convert:(from,to,value)=>{
-        
+    convert:(type,from,to,value=1)=>{
+        //Convert function
+        switch (type) {
+            case "area":
+                //#region AREA
+                if (from=="m2") {
+                    if (to=="km2") {
+                        return value / 1000000;
+                    }
+                    else if (to=="mm2") {
+                        return value * 1000000;
+                    }
+                    else if (to=="sm2" || to=="cm2"){
+                        return value * 10000
+                    }
+                    else{
+                        return "to parameter is wrong"
+                    }
+                }
+                else if(from=="km2"){
+                    if (to == "m2") {
+                        return value * 1000000;
+                    }
+                    else if (to == "mm2") {
+                        return value * 1000000000000;
+                    }
+                    else if (to == "sm2" || to == "cm2") {
+                        return value * 10000000000;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }
+                else if (from == "cm2" || from=="sm2") {
+                    if (to == "m2") {
+                        return value /10000;
+                    }
+                    else if (to == "mm2") {
+                        return value * 100;
+                    }
+                    else if (to == "km2") {
+                        return value / 10000000000;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }
+                else if (from == "mm2") {
+                    if (to == "m2") {
+                        return value / 1000000;
+                    }
+                    else if (to == "km2") {
+                        return value / 1000000000000;
+                    }
+                    else if (to == "sm2" || to == "cm2") {
+                        return value / 100;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }else{
+                    return "from parameter is wrong";
+                }
+                //#endregion
+            
+            case "length":
+                //#region LENGTH
+                if (from == "m") {
+                    if (to == "km") {
+                        return value / 1000;
+                    }
+                    else if (to == "mm") {
+                        return value * 1000;
+                    }
+                    else if (to == "sm" || to == "cm") {
+                        return value * 100
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }
+                else if (from == "km") {
+                    if (to == "m") {
+                        return value * 1000;
+                    }
+                    else if (to == "mm") {
+                        return value * 1000000;
+                    }
+                    else if (to == "sm" || to == "cm") {
+                        return value * 100000;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }
+                else if (from == "cm" || from == "sm") {
+                    if (to == "m") {
+                        return value / 100;
+                    }
+                    else if (to == "mm") {
+                        return value * 10;
+                    }
+                    else if (to == "km") {
+                        return value / 100000;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                }
+                else if (from == "mm") {
+                    if (to == "m") {
+                        return value / 1000;
+                    }
+                    else if (to == "km") {
+                        return value / 1000000;
+                    }
+                    else if (to == "sm" || to == "cm") {
+                        return value / 10;
+                    }
+                    else {
+                        return "to parameter is wrong"
+                    }
+                } else {
+                    return "from parameter is wrong";
+                }
+                //#endregion
+
+            case "currency":
+                break;
+
+            case "speed":
+                break;
+
+            case "angle":
+                break;
+
+            case "data":
+                break;
+
+            case "weight":
+                break;
+
+            case "temperature":
+                break;
+
+            default:
+                return "type parameter is wrong";
+        }
+
+
+
+
+
+
+
+
+
+
+
     },
 
 }
