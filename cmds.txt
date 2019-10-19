@@ -1,11 +1,11 @@
-EasyCode CMD List
+EasyCode CMD map
 
 **Normal Functions**
     
     write(str)
     writeln(str)
     msbox(str)
-    getDate()
+    getDate(str?//format of time// , str?//seperator//)#LOOK DETAILS:"getDate() function"
 
 
 
@@ -26,9 +26,16 @@ EasyCode CMD List
 
     doc
         |----add
-                |----p(str//text inside paragraph// , str//'optional' class of paragraph. default:none-class// , str//'optional' style code for paragraph// , str//'optional' display status of paragraph. default:inline-block//)
+                |----p(str//text inside paragraph//)#LOOK DETAILS:"adding paragraph"
                 |----html(str//HTML code//)
                 |----css(str//selector// , str//CSS code//)
                 |----block(str//ID for the div element)
         |----hide(str//selector//)
         |----show(str//selector//)
+
+
+
+**DETAILS**
+    getDate() function:
+        getDate() function is a function for getting date with manual or auto parameters.
+        

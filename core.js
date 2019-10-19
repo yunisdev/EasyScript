@@ -67,6 +67,7 @@ function getDate(format="dmy",seperator="/"){
     }
     return full_date_string;
 }
+
 //#endregion
 
 
@@ -110,7 +111,6 @@ const style = {
             default:
                 break;
         }
-
     },
 }
 //#endregion
