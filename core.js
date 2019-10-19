@@ -1,12 +1,20 @@
 //EasyCode Core
 //Do not change anything.Else can be some problems
 
-//GLOBALS
+//#region GLOBALS
 const newLine = "<br>";
 let write_status = "none";
+const date_object = new Date();
+
+//----DATE
+let date_day;
+let date_day_of_week;
+let date_year;
+let date_month;
+let full_date_string="";
 
 
-
+//#endregion
 
 
 //#region Independent functions
@@ -14,6 +22,7 @@ function write(str) {
     document.write(str);
     write_status = "write";
 }
+
 function writeln(str) {
     if (write_status == "none") {
         document.write(str + "<br>");
@@ -28,8 +37,35 @@ function writeln(str) {
         write_status = "writeln";
     }
 }
+
 function msbox(str){
     window.alert(str);
+}
+
+function getDate(format="dmy",seperator="/"){ 
+    date_day = date_object.getDate();
+    date_day_of_week = date_object.getDay();
+    date_month = date_object.getMonth();
+    date_year = date_object.getFullYear();
+    
+    for (var i = 0; i < format.length;i++){
+        if (format[i]=="d") {
+            full_date_string+=date_day;
+        }
+        else if (format[i]=="m") {
+            full_date_string+=date_month;
+        }
+        else if (format[i]=="y") {
+            full_date_string+=date_year;
+        }
+        else if (format[i]=="w") {
+            full_date_string+=date_day_of_week;
+        }
+        if (i != format.length-1) {
+            full_date_string+=seperator;
+        }
+    }
+    return full_date_string;
 }
 //#endregion
 
@@ -123,3 +159,5 @@ const math = {
     },
 }
 //#endregion
+
+

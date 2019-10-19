@@ -5,6 +5,7 @@ EasyCode CMD List
     write(str)
     writeln(str)
     msbox(str)
+    getDate()
 
 
 
