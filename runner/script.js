@@ -1,1 +1,1 @@
-write("ailəmlə");
+include.designer();

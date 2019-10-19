@@ -161,3 +161,11 @@ const math = {
 //#endregion
 
 
+const include = {
+    designer:()=>{
+        document.querySelector("head").innerHTML +="<script src=\"../designer.js\"></script>"
+    },
+    form:()=>{
+
+    },
+}
