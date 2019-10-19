@@ -1,0 +1,33 @@
+EasyCode CMD List
+
+**Normal Functions**
+    
+    write(str)
+    writeln(str)
+    msbox(str)
+
+
+
+**Objects and methods**
+
+    math
+        |----PI
+        |----pi
+        |----power(float,int)
+        |----factorial(int)
+
+    style
+        |----setBack(str//color name or code//)
+        |----setBackImg(str//image url or directory// , str//size parameter.only one of the "cover" or "normal"//)
+        |----setFont
+                |----color(str//color name or code//)
+                |----style(str//only one of the "italic","bold" or "underline"//)
+
+    doc
+        |----add
+                |----p(str//text inside paragraph// , str//'optional' class of paragraph. default:none-class// , str//'optional' style code for paragraph// , str//'optional' display status of paragraph. default:inline-block//)
+                |----html(str//HTML code//)
+                |----css(str//selector// , str//CSS code//)
+                |----block(str//ID for the div element)
+        |----hide(str//selector//)
+        |----show(str//selector//)
