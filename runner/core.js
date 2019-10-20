@@ -42,7 +42,9 @@ function msbox(str){
     window.alert(str);
 }
 
-function getDate(format="dmy",seperator="/"){ 
+function getDate(format,seperator){ 
+    format = format || 'dmy';
+    seperator = seperator || "/";
     date_day = date_object.getDate();
     date_day_of_week = date_object.getDay();
     date_month = date_object.getMonth();
@@ -74,14 +76,14 @@ function getDate(format="dmy",seperator="/"){
 //#region Style object
 var body = document.querySelector("body");
 const style = {
-    setBack:(value)=>{
+    setBack:function (value) {
         document.querySelector("body").style.backgroundColor = value;
     },
     setFont:{
-        color:(value)=>{
+        color:function (value) {
             document.querySelector("body").style.color = value;
         },
-        style:(value)=>{
+        style:function (value) {
             switch (value) {
                 case "italic":
                     document.querySelector("body").style.fontStyle = "italic";
@@ -99,7 +101,8 @@ const style = {
 
         },
     },
-    setBackImg:(imgurl,size = "cover")=>{
+    setBackImg: function (imgurl,size) {
+        size = size || "cover";
         document.querySelector("body").style.backgroundImage = "url("+imgurl+")";
         switch (size) {
             case "cover":
@@ -119,24 +122,27 @@ const style = {
 //#region Doc object
 const doc = {
     add:{
-        p:(text,cl="none-class",style="",display="inline-block")=>{
+        p: function (text,cl,style,display) {
+            cl= cl || "none-class";
+            style= style || "";
+            display= display || "inline-block"
             document.querySelector("#added").innerHTML += "<p class='"+cl+"' style='display:"+display+";"+style+";'>"+text+"</p>";
         },
-        html:(code)=>{
+        html: function (code) {
             document.querySelector("#added").innerHTML += code;
         },
-        css:(selector,code)=>{
+        css: function (selector,code) {
             var coded = document.querySelector(selector).getAttribute("style");
             document.querySelector(selector).setAttribute("style",coded +";"+code+";");
         },
-        block:(id)=>{
+        block: function (id) {
             document.querySelector("#added").innerHTML += "<div style id='"+ id +"'></div>";
         },
     },
-    hide:(selector)=>{
+    hide: function (selector) {
         document.querySelector(selector).style.display="none";
     },
-    show:(selector)=>{
+    show: function (selector) {
         document.querySelector(selector).style.display="inherit";
     },
 }
@@ -147,10 +153,10 @@ const doc = {
 const math = {
     pi:3.14,
     PI: 3.1415926535897932384626433832795,
-    power:(int1,int2)=>{
-        return int1**int2;
+    power: function (int1,int2) {
+        return Math.pow(int1,int2);
     },
-    factorial:(integer)=>{
+    factorial: function  (integer) {
         var result = 1;
         for(var i = integer;i>0;i--){
             result *= i;
@@ -162,13 +168,13 @@ const math = {
 
 
 const include = {
-    designer:()=>{
+    designer: function () {
         document.querySelector("head").innerHTML +="<script src=\"../libs/designer.js\"></script>";
     },
-    advanced:()=>{
+    advanced: function () {
         document.querySelector("head").innerHTML += "<script src=\"../libs/form.js\"></script>";
     },
-    form:()=>{
+    form:function () {
         document.querySelector("head").innerHTML += "<script src=\"../libs/advanced.js\"></script>";
     },
 }
