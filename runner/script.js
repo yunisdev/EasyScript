@@ -1,1 +1,1 @@
-writeln("Hello");
+writeln(getDate("dmy","::"));
