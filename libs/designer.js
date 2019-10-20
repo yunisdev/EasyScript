@@ -8,5 +8,5 @@ const design = {
 
 
 function createNavbar() {
-        
+        document.querySelector("#added").innerHTML += "<nav></nav>"
 }

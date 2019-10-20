@@ -1,6 +1,37 @@
 body{
-    padding:20px;
     margin:0;
     top:0;
     left:0;
+    overflow: hidden;
+}
+
+nav.auto-navbar-default{
+    padding: 0px;
+    width: 100% !important;
+    float: left;
+    background-color: brown;   
+}
+nav.auto-navbar-default ul{
+    list-style-type: none;
+}
+nav.auto-navbar-default ul li{
+    box-sizing: border-box;
+    display: inline-block;
+    text-align: center;
+    color:white;
+    padding-top: 15px;
+    width: 200px;
+    height: 50px;
+    transition: 0.5s all ease-out;
+}
+nav.auto-navbar-default ul li:hover{
+    background-color: antiquewhite;
+    color: brown!important;
+    transition: 0.5s all ease-out;
+}
+nav.auto-navbar-default ul li a{
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: monospace;
+    text-decoration:none!important;
 }

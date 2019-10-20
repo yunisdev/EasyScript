@@ -2,7 +2,7 @@
 //Do not change anything.Else can be some problems
 
 //#region GLOBALS
-const newLine = "<br>";
+let newLine = "<br>";
 let write_status = "none";
 const date_object = new Date();
 
