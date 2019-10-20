@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -20,16 +21,39 @@ namespace EasyCode_IDE
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            webBrowser.ScriptErrorsSuppressed = true;
-            Uri u = new Uri(@"D:\Programming\Programming Projects\EasyCode\runner\index.html");
-            webBrowser.Navigate(u);
-            var CurrentDocument = (mshtml.HTMLDocument)webBrowser1.Document.DomDocument;
-            var styleSheet = CurrentDocument.createStyleSheet("", 0);
+            string dir = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("EasyCode IDE.exe", "");
 
-            StreamReader streamReader = new StreamReader(@"test.css"); //test.css is Stylesheet file
-            string text = streamReader.ReadToEnd();
-            streamReader.Close();
-            styleSheet.cssText
+            string code = codeBox.Text;
+            System.IO.File.WriteAllText($@"{dir}runner\script.js",code);
+
+
+
+
+            webBrowser.ScriptErrorsSuppressed = true;
+            Uri u = new Uri($@"{dir}runner\index.html");
+            webBrowser.Navigate(u);
+            
+            RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BROWSER_EMULATION",true);
+            if (key != null)
+            {
+                key.SetValue("EasyCode IDE.exe",11001,RegistryValueKind.DWord);
+            }
+            key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BROWSER_EMULATION",true);
+            if (key != null)
+            {
+                key.SetValue("EasyCode IDE.exe",11001,RegistryValueKind.DWord);
+            }
+            
+        }
+
+        private void MAIN_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void New_file_Click(object sender, EventArgs e)
+        {
+            codeBox.Text = "";
         }
     }
 }

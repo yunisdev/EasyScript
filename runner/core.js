@@ -106,7 +106,7 @@ const style = {
                 document.querySelector("body").style.backgroundSize = "cover";       
                 break;
             case "normal":
-                document.querySelector("body").style.backgroundSize = "normal"
+                document.querySelector("body").style.backgroundSize = "normal";
                 break;
             default:
                 break;
@@ -120,14 +120,14 @@ const style = {
 const doc = {
     add:{
         p:(text,cl="none-class",style="",display="inline-block")=>{
-            document.querySelector("#added").innerHTML += "<p class='"+cl+"' style='display:"+display+";"+style+";'>"+text+"</p>"
+            document.querySelector("#added").innerHTML += "<p class='"+cl+"' style='display:"+display+";"+style+";'>"+text+"</p>";
         },
         html:(code)=>{
             document.querySelector("#added").innerHTML += code;
         },
         css:(selector,code)=>{
-            var coded = document.querySelector(selector).getAttribute("style")
-            document.querySelector(selector).setAttribute("style",coded +";"+code+";")
+            var coded = document.querySelector(selector).getAttribute("style");
+            document.querySelector(selector).setAttribute("style",coded +";"+code+";");
         },
         block:(id)=>{
             document.querySelector("#added").innerHTML += "<div style id='"+ id +"'></div>";
@@ -163,12 +163,12 @@ const math = {
 
 const include = {
     designer:()=>{
-        document.querySelector("head").innerHTML +="<script src=\"../libs/designer.js\"></script>"
+        document.querySelector("head").innerHTML +="<script src=\"../libs/designer.js\"></script>";
     },
     advanced:()=>{
-        document.querySelector("head").innerHTML += "<script src=\"../libs/form.js\"></script>"
+        document.querySelector("head").innerHTML += "<script src=\"../libs/form.js\"></script>";
     },
     form:()=>{
-        document.querySelector("head").innerHTML += "<script src=\"../libs/advanced.js\"></script>"
+        document.querySelector("head").innerHTML += "<script src=\"../libs/advanced.js\"></script>";
     },
 }
