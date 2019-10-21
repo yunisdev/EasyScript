@@ -29,7 +29,7 @@ namespace EasyCode_IDE
 
 
 
-            //webBrowser.ScriptErrorsSuppressed = true;
+            webBrowser.ScriptErrorsSuppressed = true;
             Uri u = new Uri($@"{dir}runner\index.html");
             webBrowser.Navigate(u);
             

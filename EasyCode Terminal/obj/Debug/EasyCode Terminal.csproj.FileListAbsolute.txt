@@ -1,0 +1,7 @@
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\bin\Debug\EasyCode Terminal.exe.config
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\bin\Debug\EasyCode Terminal.exe
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\bin\Debug\EasyCode Terminal.pdb
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\obj\Debug\EasyCode Terminal.csprojAssemblyReference.cache
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\obj\Debug\EasyCode Terminal.csproj.CoreCompileInputs.cache
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\obj\Debug\EasyCode Terminal.exe
+D:\Programming\Programming Projects\EasyCode\EasyCode Terminal\obj\Debug\EasyCode Terminal.pdb
