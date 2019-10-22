@@ -50,7 +50,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>logo_IlQ_icon.ico</ApplicationIcon>
+    <ApplicationIcon>
+    </ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Win32Resource>D:\Programming\Programming Projects\EasyCode\EasyCode IDE.res</Win32Resource>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
