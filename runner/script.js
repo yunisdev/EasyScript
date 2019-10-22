@@ -1,1 +1,1 @@
-writeln("Hello World!!!")
+writeln(math.power(15,2))
