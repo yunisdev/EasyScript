@@ -1,3 +1,1 @@
-for(var i = 0;i<=100;i++){
-writeln(i);
-}
+writeln(math.power(9999,9999) + "1");

@@ -154,7 +154,11 @@ const math = {
     pi:3.14,
     PI: 3.1415926535897932384626433832795,
     power: function (int1,int2) {
-        return Math.pow(int1,int2);
+        var result = 1;
+        for(var i = 1;i<=int2;i++){
+            result = result * int1;
+        }
+        return result;
     },
     factorial: function  (integer) {
         var result = 1;
