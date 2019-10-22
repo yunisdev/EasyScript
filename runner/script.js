@@ -1,1 +1,3 @@
-writeln(math.power(9999,9999) + "1");
+for(var i = 0;i<=100;i++){
+writeln("Hello");
+}

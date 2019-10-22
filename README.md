@@ -11,3 +11,16 @@ write("Hello World!!!");
 
 writeln("Hello World!!!");
 ```
+
+### Basic Syntax
+Syntax of EasyCode is not hard to learn.Mostly looks like JavaScript.
+Example:
+```javascript
+
+function hello(a,b){
+    if(a>b){
+        msbox("Hello. You had entered "+a+" and "+b);
+    }
+}
+
+```

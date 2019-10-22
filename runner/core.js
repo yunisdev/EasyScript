@@ -70,6 +70,11 @@ function getDate(format,seperator){
     return full_date_string;
 }
 
+function clear(){
+    document.querySelector("body").innerHTML = "<div id=\"added\"></div><script type=\"text/javascript\" src=\"script.js\"></script>"
+}
+
+
 //#endregion
 
 
