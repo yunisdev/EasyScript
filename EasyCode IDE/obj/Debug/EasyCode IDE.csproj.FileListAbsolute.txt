@@ -1,6 +1,3 @@
-D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.exe.config
-D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.exe
-D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.pdb
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode IDE.csprojAssemblyReference.cache
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode_IDE.Properties.Resources.resources
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode IDE.csproj.GenerateResource.cache
@@ -8,3 +5,9 @@ D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode IDE
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode IDE.exe
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode IDE.pdb
 D:\Programming\Programming Projects\EasyCode\EasyCode IDE\obj\Debug\EasyCode_IDE.MAIN.resources
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE.exe.config
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE.exe
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE.pdb
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.exe.config
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.exe
+D:\Programming\Programming Projects\EasyCode\EasyCode IDE\bin\Debug\EasyCode IDE.pdb

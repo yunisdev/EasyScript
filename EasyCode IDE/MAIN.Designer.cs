@@ -29,11 +29,13 @@
         private void InitializeComponent()
         {
             this.webBrowser = new System.Windows.Forms.WebBrowser();
-            this.codeBox = new System.Windows.Forms.TextBox();
             this.run = new System.Windows.Forms.Button();
             this.open_file = new System.Windows.Forms.Button();
             this.save_file = new System.Windows.Forms.Button();
             this.new_file = new System.Windows.Forms.Button();
+            this.codeBox = new System.Windows.Forms.RichTextBox();
+            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.SuspendLayout();
             // 
             // webBrowser
@@ -45,16 +47,6 @@
             this.webBrowser.Size = new System.Drawing.Size(711, 735);
             this.webBrowser.TabIndex = 0;
             this.webBrowser.Url = new System.Uri("", System.UriKind.Relative);
-            // 
-            // codeBox
-            // 
-            this.codeBox.Font = new System.Drawing.Font("Ubuntu Mono", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codeBox.Location = new System.Drawing.Point(15, 100);
-            this.codeBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.codeBox.Multiline = true;
-            this.codeBox.Name = "codeBox";
-            this.codeBox.Size = new System.Drawing.Size(722, 647);
-            this.codeBox.TabIndex = 1;
             // 
             // run
             // 
@@ -78,6 +70,7 @@
             this.open_file.TabIndex = 3;
             this.open_file.Text = "OPEN";
             this.open_file.UseVisualStyleBackColor = true;
+            this.open_file.Click += new System.EventHandler(this.Open_file_Click);
             // 
             // save_file
             // 
@@ -89,6 +82,7 @@
             this.save_file.TabIndex = 4;
             this.save_file.Text = "SAVE";
             this.save_file.UseVisualStyleBackColor = true;
+            this.save_file.Click += new System.EventHandler(this.Save_file_Click);
             // 
             // new_file
             // 
@@ -102,16 +96,36 @@
             this.new_file.UseVisualStyleBackColor = true;
             this.new_file.Click += new System.EventHandler(this.New_file_Click);
             // 
+            // codeBox
+            // 
+            this.codeBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.codeBox.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codeBox.Location = new System.Drawing.Point(12, 97);
+            this.codeBox.Name = "codeBox";
+            this.codeBox.Size = new System.Drawing.Size(742, 650);
+            this.codeBox.TabIndex = 6;
+            this.codeBox.Text = "";
+            this.codeBox.TextChanged += new System.EventHandler(this.CodeBox_text);
+            // 
+            // saveFileDialog1
+            // 
+            this.saveFileDialog1.FileName = "MyCode.easy";
+            this.saveFileDialog1.Title = "Save your code.";
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
             // MAIN
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1510, 758);
+            this.Controls.Add(this.codeBox);
             this.Controls.Add(this.new_file);
             this.Controls.Add(this.save_file);
             this.Controls.Add(this.open_file);
             this.Controls.Add(this.run);
-            this.Controls.Add(this.codeBox);
             this.Controls.Add(this.webBrowser);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -121,18 +135,19 @@
             this.Text = "EasyCode IDE";
             this.Load += new System.EventHandler(this.MAIN_Load);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.WebBrowser webBrowser;
-        private System.Windows.Forms.TextBox codeBox;
         private System.Windows.Forms.Button run;
         private System.Windows.Forms.Button open_file;
         private System.Windows.Forms.Button save_file;
         private System.Windows.Forms.Button new_file;
+        private System.Windows.Forms.RichTextBox codeBox;
+        private System.Windows.Forms.SaveFileDialog saveFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

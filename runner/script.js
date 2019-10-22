@@ -1,1 +1,3 @@
-writeln(getDate("dmy","::"));
+for(var i = 0;i<=100;i++){
+writeln(i);
+}
