@@ -99,16 +99,13 @@ namespace EasyCode_IDE
             "msbox",
             "getDate",
         };
-        public string[] libraries = new string[] { "doc.", "math.", "style."};
-        public string[] inc_libraries = new string[] {"designer()" , "advanced()"};
+        public string[] libraries = new string[] { "doc.", "math.", "style." , "design."};
         #endregion
+        
+
 
         private void CodeBox_text(object sender, EventArgs e)
         {
-            foreach (string key in inc_libraries)
-            {
-                this.CheckKeyword(key, Color.Red, 0);
-            }
             foreach (string key in normal_keywords)
             {
                 this.CheckKeyword(key, Color.Brown, 0);
@@ -117,8 +114,6 @@ namespace EasyCode_IDE
             {
                 this.CheckKeyword(key, Color.Aqua, 0);
             }
-
-            this.CheckKeyword("include.", Color.Violet, 0);
         }
 
         private void Save_file_Click(object sender, EventArgs e)

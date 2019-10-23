@@ -99,6 +99,7 @@
             // 
             // codeBox
             // 
+            this.codeBox.AcceptsTab = true;
             this.codeBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.codeBox.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codeBox.Location = new System.Drawing.Point(12, 97);
