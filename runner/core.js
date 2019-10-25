@@ -24,16 +24,22 @@ function write(str) {
 }
 
 function writeln(str) {
-    if (write_status == "none") {
-        document.write(str + "<br>");
-        write_status = "writeln";
-    }
-    else if (write_status == "write") {
-        document.write("<br>" + str + "<br>");
-        write_status = "writeln";
-    }
-    else if (write_status == "writeln") {
-        document.write(str + "<br>");
+    str = str || "<br>"
+    if(str != "<br>"){
+        if (write_status == "none") {
+            document.write(str + "<br>");
+            write_status = "writeln";
+        }
+        else if (write_status == "write") {
+            document.write("<br>" + str + "<br>");
+            write_status = "writeln";
+        }
+        else if (write_status == "writeln") {
+            document.write(str + "<br>");
+            write_status = "writeln";
+        }
+    }else{
+        document.write("<br>");
         write_status = "writeln";
     }
 }
@@ -211,3 +217,12 @@ function createLabel(text,color,size,manual_css) {
     document.querySelector("#added").innerHTML += "<label style=\""+manual_css+";color:"+color+";font-size:"+size+";\">"+text+"</label>";
 }
 //#endregion
+
+
+const nl = "<br>"
+function foreach(arr,seperator){
+    for(var i = 0;i<=arr.length-1;i++){
+        write(arr[i]);
+        write(seperator);
+    }
+}

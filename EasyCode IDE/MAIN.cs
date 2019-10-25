@@ -98,24 +98,92 @@ namespace EasyCode_IDE
             "for",
             "msbox",
             "getDate",
+            "clear()",
         };
-        public string[] libraries = new string[] { "doc.", "math.", "style." , "design."};
+        public string[] libraries = new string[] {
+            "doc.",
+            "math.",
+            "style." ,
+            "design.",
+            //SUB LIBRARIES AND METHODS
+            
+            //DOC
+            "doc.add.",
+            "doc.add.p",
+            "doc.add.html",
+            "doc.add.css",
+            "doc.add.block",
+            "doc.hide",
+            "doc.show",
+            
+            //MATH
+            "math.pi",
+            "math.PI",
+            "math.power",
+            "math.factorial",
+
+            //STYLE
+            "style.setBack",
+            "style.setFont.color",
+            "style.setFont.style",
+            "style.setBackImg",
+
+            //DESIGN
+            "design.add",
+            "design.add.label",
+            "design.add.navbar",
+        };
         #endregion
         
 
 
         private void CodeBox_text(object sender, EventArgs e)
         {
+
+            
             foreach (string key in normal_keywords)
             {
                 this.CheckKeyword(key, Color.Brown, 0);
             }
             foreach (string key in libraries)
             {
-                this.CheckKeyword(key, Color.Aqua, 0);
+                this.CheckKeyword(key, Color.MediumAquamarine, 0);
             }
-        }
+            try
+            {
+                if (Convert.ToString(this.codeBox.Text[this.codeBox.Text.Length - 1]) == "{")
+                {
+                    int selectStart = this.codeBox.SelectionStart;
+                    this.codeBox.Text += "}";
+                    this.codeBox.Select(selectStart, 0);
+                }
+                if (Convert.ToString(this.codeBox.Text[this.codeBox.Text.Length - 1]) == "(")
+                {
+                    int selectStart = this.codeBox.SelectionStart;
+                    this.codeBox.Text += ")";
+                    this.codeBox.Select(selectStart, 0);
+                }
+                if (Convert.ToString(this.codeBox.Text[this.codeBox.Text.Length - 1]) == "[")
+                {
+                    int selectStart = this.codeBox.SelectionStart;
+                    this.codeBox.Text += "]";
+                    this.codeBox.Select(selectStart, 0);
+                }
+                else
+                {
+                    int selectStart = this.codeBox.SelectionStart;
+                    this.codeBox.Select(selectStart, 0);
+                    this.codeBox.SelectionColor = Color.Black;
+                }
+            }
+            catch
+            {
 
+            }
+            
+
+        }
+           
         private void Save_file_Click(object sender, EventArgs e)
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
