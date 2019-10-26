@@ -1,0 +1,1 @@
+writeln(getDate("y"))

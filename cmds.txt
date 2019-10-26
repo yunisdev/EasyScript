@@ -6,6 +6,7 @@ EasyCode CMD map
     writeln(str)
     msbox(str)
     getDate(str?//format of time// , str?//seperator//)#LOOK DETAILS:"getDate() function"
+    clear()
 
 
 
@@ -16,6 +17,10 @@ EasyCode CMD map
         |----pi
         |----power(float,int)
         |----factorial(int)
+        |----sin(int)
+        |----cos(int)
+        |----tg(int)
+        |----ctg(int)
 
     style
         |----setBack(str//color name or code//)

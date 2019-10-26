@@ -178,6 +178,21 @@ const math = {
         }
         return result;
     },
+    sqrt:function (int) {
+        Math.sqrt(int);
+    },
+    cos:function (int){
+        return Math.abs(Math.cos(int));
+    },
+    sin:function (int){
+        return Math.abs(Math.sin(int));
+    },
+    tg:function (int){
+        return Math.abs(Math.tan(int))
+    },
+    ctg: function (int) {
+        return Math.abs(1/this.tg(int))
+    },
 }
 //#endregion
 
