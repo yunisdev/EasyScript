@@ -6,6 +6,7 @@
         document.querySelector(".btn").setAttribute("style","color:white!important;border-color:white!important;");
         document.querySelector(".project-tagline").setAttribute("style","color:white!important;opacity:1!important;font-family: 'Raleway Dots', cursive;");
         document.querySelector("head").innerHTML += "<link href=\"https:\/\/fonts.googleapis.com/css?family=Raleway+Dots|Ubuntu+Mono&display=swap\" rel=\"stylesheet\">";
+        document.querySelector(".site-footer-credits").style.display = "none";
     </script>
 </body>
 </html>
