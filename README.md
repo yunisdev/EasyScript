@@ -3,14 +3,14 @@ EasyCode is a simple JavaScript based programming language for beginners which i
 JavaScript,C#,HTML and CSS has used for this project.
 Core of library has written in JavaScript . But UI and some little functions written in C# . HTML and CSS is used for visual output . 
 
-### Hello World
+## Hello World
 ```javascript
 write("Hello World!!!");
 //or
 writeln("Hello World!!!");
 ```
 
-### Basic Syntax
+## Basic Syntax
 Syntax of EasyCode is not hard to learn . Mostly looks like JavaScript.
 Example:
 ```javascript
@@ -20,9 +20,9 @@ function hello(a,b){
     }
 }
 ```
-### Objects , functions and methods
+## Objects , functions and methods
 
-##### msbox() function
+#### msbox() function
 msbox() function shows a message box on the screen.
 There is only one parameter:**text**
 
@@ -31,7 +31,7 @@ There is only one parameter:**text**
 msbox("Test"); //Show an alert which has "Test"text
 ```
 
-##### getDate() function
+#### getDate() function
 getDate() function returns current date
 ```javascript
 //We will accept default date as 21 October 2019
@@ -52,7 +52,7 @@ writeln(getDate("y"));   //Output: 2019
 writeln(getDate("dmy",":")); //Output: 21:10:2019
 ```
 
-##### math object
+### math object
 With math object you can...
 ###### ...get value of pi
 ```javascript
@@ -80,4 +80,4 @@ writeln(math.tg(45));   //Output: 1.6197751905438615
 writeln(math.ctg(45));  //Output: 0.6173696237835551
 ```
 
-#### style object
+### style object
