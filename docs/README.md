@@ -2,8 +2,8 @@
 <body>
     <script type="text/javascript">
         document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(180deg, #4E9BD5, white)!important;padding-top:20px;");
-        document.querySelector(".btn").setAttribute("style","color:white;border-color:white;")
-        document.querySelector(".project-tagline").setAttribute("style","color:white;")
+        document.querySelector(".btn").setAttribute("style","color:white !important;border-color:white !important;")
+        document.querySelector(".project-tagline").setAttribute("style","color:white !important;")
     </script>
 </body>
 </html>
