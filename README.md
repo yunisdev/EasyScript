@@ -1,7 +1,11 @@
-<!DOCTYPE html>
 <head>
-    <link rel="icon" type="image/png" href="">
-    <script>window.alert("Hello")</script>
+    <!--<link rel="icon" type="image/png" href=""> -->
+<style>
+.page-header{
+    background-color:linear-gradient(120deg, #155799, #159957);
+}
+
+</style>
 </head>
 EasyScript is a simple JavaScript based programming language for beginners which is created by Yunis Huseynzade.
 JavaScript,C#,HTML and CSS has used for this project.
