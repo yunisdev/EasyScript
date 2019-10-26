@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{D99F1487-DCFA-47B1-B279-EFFB69A7CC52}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>EasyCode_IDE</RootNamespace>
-    <AssemblyName>EasyCode IDE</AssemblyName>
+    <RootNamespace>EasyScript_IDE</RootNamespace>
+    <AssemblyName>EasyScript IDE</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -54,7 +54,7 @@
     </ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <Win32Resource>D:\Programming\Programming Projects\EasyCode\EasyCode IDE.res</Win32Resource>
+    <Win32Resource>D:\Programming\Programming Projects\EasyScript\EasyScript.res</Win32Resource>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -89,6 +89,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

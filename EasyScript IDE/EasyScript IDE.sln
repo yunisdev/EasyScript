@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29306.81
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyCode IDE", "EasyCode IDE.csproj", "{D99F1487-DCFA-47B1-B279-EFFB69A7CC52}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyScript IDE", "EasyScript IDE.csproj", "{D99F1487-DCFA-47B1-B279-EFFB69A7CC52}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
