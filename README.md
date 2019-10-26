@@ -51,6 +51,7 @@ writeln(getDate("y"));   //Output: 2019
 writeln(getDate("dmy",":")); //Output: 21:10:2019
 ```
 
+
 ## math object
 With math object you can...
 ##### ...get value of pi
@@ -78,5 +79,6 @@ writeln(math.cos(45));  //Output: 0.5253219888177297
 writeln(math.tg(45));   //Output: 1.6197751905438615
 writeln(math.ctg(45));  //Output: 0.6173696237835551
 ```
+
 
 ## style object
