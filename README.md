@@ -1,5 +1,5 @@
 <head>
-    <script>
+    <script type="text/javascript">
         document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(120deg, aqua, green)!important;");
     </script>
 </head>
