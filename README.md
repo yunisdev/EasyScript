@@ -1,6 +1,8 @@
-<body>
-    <script>document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(120deg, green, lightblue)!important;")</script>
-</body>
+<head>
+    <script>
+        document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(120deg, aqua, green)!important;");
+    </script>
+</head>
 EasyScript is a simple JavaScript based programming language for beginners which is created by Yunis Huseynzade.
 JavaScript,C#,HTML and CSS has used for this project.
 Core of library has written in JavaScript . But UI and some little functions written in C# . HTML and CSS is used for visual output . 
