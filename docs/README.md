@@ -1,7 +1,7 @@
 <html>
 <body>
     <script type="text/javascript">
-        document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(120deg, aqua, green)!important;");
+        document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(180deg, blue, white)!important;");
     </script>
 </body>
 </html>
