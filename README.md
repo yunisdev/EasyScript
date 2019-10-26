@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 EasyCode is a simple JavaScript based programming language for beginners which is created by Yunis Huseynzade.
 JavaScript,C#,HTML and CSS has used for this project.
 Core of library has written in JavaScript . But UI and some little functions written in C# . HTML and CSS is used for visual output . 
