@@ -160,7 +160,7 @@ const doc = {
 //#endregion
 
 
-//#region Math object
+//#region Math Object
 const math = {
     pi:3.14,
     PI: 3.1415926535897932384626433832795,
