@@ -24,7 +24,7 @@ function hello(a,b){
 
 #### msbox() function
 msbox() function shows a message box on the screen.
-There is only one parameter:**text**
+There is only one parameter : **text**
 
 **text** - accepts string.Example "Hello World!!!"
 ```javascript
@@ -37,7 +37,7 @@ getDate() function returns current date
 //We will accept default date as 21 October 2019
 writeln(getDate()); //Output: 21/10/2019
 ```
-There are two optional parameters:**format** and **seperator**
+There are two optional parameters : **format** and **seperator**
 
 **format** - accepts string . Example: "dmy". 
 You can use *y*(year) , *m*(month) , *d*(day) , *w*(day of week with an integer) letters for this parameter.
@@ -52,27 +52,27 @@ writeln(getDate("y"));   //Output: 2019
 writeln(getDate("dmy",":")); //Output: 21:10:2019
 ```
 
-### math object
+## math object
 With math object you can...
-###### ...get value of pi
+##### ...get value of pi
 ```javascript
 writeln(math.PI); //Output: 3.1415926535897932384626433832795
 
 writeln(math.pi); //Output: 3.14
 ```
-###### ...find factorial
+##### ...find factorial
 ```javascript
 writeln(math.factorial(5)); //Output: 120
 ```
-###### ...power
+##### ...power
 ```javascript
 writeln(math.power(2,3)); //Output: 8
 ```
-###### ...find square root
+##### ...find square root
 ```javascript
 writeln(math.sqrt(4));  //Output: 2
 ```
-###### ...get value of sin,cos,tg,ctg
+##### ...get value of sin,cos,tg,ctg
 ```javascript
 writeln(math.sin(45));  //Output: 0.8509035245341184
 writeln(math.cos(45));  //Output: 0.5253219888177297
@@ -80,4 +80,4 @@ writeln(math.tg(45));   //Output: 1.6197751905438615
 writeln(math.ctg(45));  //Output: 0.6173696237835551
 ```
 
-### style object
+## style object
