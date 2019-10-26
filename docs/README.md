@@ -2,6 +2,7 @@
 <body>
     <script type="text/javascript">
         document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(180deg, #4E9BD5, white)!important;");
+        document.querySelector(".page-header").setAttribute("style","padding-top:20px;");
     </script>
 </body>
 </html>
