@@ -1,0 +1,10 @@
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\bin\Debug\EasyScript IDE.exe.config
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\bin\Debug\EasyScript IDE.exe
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\bin\Debug\EasyScript IDE.pdb
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript IDE.csprojAssemblyReference.cache
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyCode_IDE.MAIN.resources
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript_IDE.Properties.Resources.resources
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript IDE.csproj.GenerateResource.cache
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript IDE.csproj.CoreCompileInputs.cache
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript IDE.exe
+D:\Programming\Programming Projects\EasyScript\EasyScript IDE\obj\Debug\EasyScript IDE.pdb
