@@ -2,7 +2,7 @@
     <!--<link rel="icon" type="image/png" href=""> -->
 <style>
 .page-header{
-    background-color:linear-gradient(120deg, #155799, #159957);
+    background-color:linear-gradient(120deg,lightblue,aqua);
 }
 
 </style>
