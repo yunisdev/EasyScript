@@ -4,7 +4,7 @@
         document.querySelector(".page-header").setAttribute("style","background-image: linear-gradient(180deg, #4E9BD5, white)!important;padding-top:20px;");
         document.querySelector(".project-name").setAttribute("style","font-family: 'Ubuntu Mono', monospace;")
         document.querySelector(".btn").setAttribute("style","color:white!important;border-color:white!important;");
-        document.querySelector(".project-tagline").setAttribute("style","color:white!important;");
+        document.querySelector(".project-tagline").setAttribute("style","color:white!important;opacity:1!important;font-family: 'Ubuntu Mono', monospace");
         document.querySelector("head").innerHTML += "<link href=\"https:\/\/fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap\" rel=\"stylesheet\">";
     </script>
 </body>
