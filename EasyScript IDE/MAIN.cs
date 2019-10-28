@@ -22,7 +22,7 @@ namespace EasyCode_IDE
             InitializeComponent();
         }
 
-        public string dir = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("EasyCode IDE.exe", "");
+        public string dir = System.Reflection.Assembly.GetExecutingAssembly().Location.Replace("EasyScript IDE.exe", "");
         [DllImport("gdi32.dll", EntryPoint = "AddFontResourceW", SetLastError = true)]
         public static extern int AddFontResource([In][MarshalAs(UnmanagedType.LPWStr)]
                                          string lpFileName);
@@ -42,12 +42,12 @@ namespace EasyCode_IDE
             RegistryKey key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BROWSER_EMULATION", true);
             if (key != null)
             {
-                key.SetValue("EasyCode IDE.exe", 11001, RegistryValueKind.DWord);
+                key.SetValue("EasyScript IDE.exe", 11001, RegistryValueKind.DWord);
             }
             key = Registry.LocalMachine.OpenSubKey(@"SOFTWARE\Wow6432Node\Microsoft\Internet Explorer\MAIN\FeatureControl\FEATURE_BROWSER_EMULATION", true);
             if (key != null)
             {
-                key.SetValue("EasyCode IDE.exe", 11001, RegistryValueKind.DWord);
+                key.SetValue("EasyScript IDE.exe", 11001, RegistryValueKind.DWord);
             }
 
         }
@@ -241,7 +241,7 @@ namespace EasyCode_IDE
         {
             SaveFileDialog saveFileDialog1 = new SaveFileDialog();
             saveFileDialog1.FileName = "NewScript.easy";
-            saveFileDialog1.Filter = "EasyCode script file (*.easy)|*.easy";
+            saveFileDialog1.Filter = "EasyScript script file (*.easy)|*.easy";
             saveFileDialog1.FilterIndex = 2;
             saveFileDialog1.RestoreDirectory = true;
 
@@ -254,7 +254,7 @@ namespace EasyCode_IDE
         private void Open_file_Click(object sender, EventArgs e)
         {
             OpenFileDialog openFileDialog1 = new OpenFileDialog();
-            openFileDialog1.Filter = "EasyCode script file (*.easy)|*.easy";
+            openFileDialog1.Filter = "EasyScript script file (*.easy)|*.easy";
             if (openFileDialog1.ShowDialog() == DialogResult.OK)
             {
                 codeBox.LoadFile(openFileDialog1.FileName);

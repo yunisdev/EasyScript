@@ -106,9 +106,9 @@
             this.codeBox.AcceptsTab = true;
             this.codeBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.codeBox.Font = new System.Drawing.Font("Ubuntu Mono", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codeBox.Location = new System.Drawing.Point(12, 131);
+            this.codeBox.Location = new System.Drawing.Point(12, 142);
             this.codeBox.Name = "codeBox";
-            this.codeBox.Size = new System.Drawing.Size(742, 616);
+            this.codeBox.Size = new System.Drawing.Size(742, 605);
             this.codeBox.TabIndex = 6;
             this.codeBox.Text = "";
             this.codeBox.TextChanged += new System.EventHandler(this.CodeBox_text);
@@ -127,7 +127,7 @@
             this.viewMinus.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewMinus.Location = new System.Drawing.Point(15, 87);
             this.viewMinus.Name = "viewMinus";
-            this.viewMinus.Size = new System.Drawing.Size(80, 38);
+            this.viewMinus.Size = new System.Drawing.Size(80, 49);
             this.viewMinus.TabIndex = 7;
             this.viewMinus.Text = "-";
             this.viewMinus.UseVisualStyleBackColor = true;
@@ -138,7 +138,7 @@
             this.viewPlus.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.viewPlus.Location = new System.Drawing.Point(111, 87);
             this.viewPlus.Name = "viewPlus";
-            this.viewPlus.Size = new System.Drawing.Size(80, 38);
+            this.viewPlus.Size = new System.Drawing.Size(80, 49);
             this.viewPlus.TabIndex = 8;
             this.viewPlus.Text = "+";
             this.viewPlus.UseVisualStyleBackColor = true;
@@ -149,7 +149,7 @@
             this.Dark.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Dark.Location = new System.Drawing.Point(608, 87);
             this.Dark.Name = "Dark";
-            this.Dark.Size = new System.Drawing.Size(129, 38);
+            this.Dark.Size = new System.Drawing.Size(129, 49);
             this.Dark.TabIndex = 9;
             this.Dark.Text = "Dark";
             this.Dark.UseVisualStyleBackColor = true;
@@ -160,7 +160,7 @@
             this.Light.Font = new System.Drawing.Font("Ubuntu Mono", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Light.Location = new System.Drawing.Point(473, 86);
             this.Light.Name = "Light";
-            this.Light.Size = new System.Drawing.Size(129, 38);
+            this.Light.Size = new System.Drawing.Size(129, 50);
             this.Light.TabIndex = 10;
             this.Light.Text = "Light";
             this.Light.UseVisualStyleBackColor = true;
