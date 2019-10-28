@@ -50,7 +50,7 @@ writeln(getDate()); //Output: 21/10/2019
 There are two optional parameters : **format** and **seperator**
 
 **format** - accepts string . Example: "dmy". <br>
-You can use *y*(year) , *m*(month) , *d*(day) , *w*(day of week with an integer) letters for this parameter.
+You can use *y* (year) , *m* (month) , *d* (day) , *w* (day of week with an integer) letters for this parameter.
 Example *"dmy"* means *day,month,year*.
 ```javascript
 writeln(getDate("mdy")); //Output: 10/21/2019
