@@ -83,3 +83,8 @@ writeln(math.ctg(45));  //Output: 0.6173696237835551
 
 
 ## style object
+##### setBack() method
+You can change background of output with this function
+```javascript
+style.setBack("blue"); // to set background to blue
+```
